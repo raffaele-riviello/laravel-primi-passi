@@ -1,0 +1,14 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400|Teko&display=swap');
+
+body {
+    font-family: $primary-font;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    font-family: $secondary-font;
+}

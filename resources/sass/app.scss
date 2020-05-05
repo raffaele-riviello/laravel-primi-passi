@@ -1,8 +1,12 @@
-// Fonts
-@import url('https://fonts.googleapis.com/css?family=Teko&display=swap');
-
-// Variables
-@import 'variables';
-
-// Bootstrap
-@import '~bootstrap/scss/bootstrap';
+/* Variables */
+@import "partials/_variables";
+/* Reset */
+@import "partials/_reset";
+/* Common */
+@import "partials/_common";
+/* Header */
+@import "partials/_header";
+/* Main */
+@import "partials/_main";
+/* Footer */
+@import "partials/_footer";

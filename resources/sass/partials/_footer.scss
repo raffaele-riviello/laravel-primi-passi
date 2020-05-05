@@ -1,0 +1,32 @@
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    .container {
+        flex-basis: calc(100% / 3 - 100px);
+        margin: 50px;
+        h4 {
+            padding-top: 10px;
+            padding-bottom: 20px;
+            color: $font_color_three;
+        }
+        ul {
+            list-style: none;
+            li {
+                color: $font_color_three;
+                font-size: 13px;
+                padding-bottom: 10px;
+                a {
+                    color: $font_color_three;
+                }
+            }
+        }
+    }
+    .left {
+        ul {
+            li {
+                font-size: 12px;
+                padding-bottom: 2px;
+            }
+        }
+    }
+}
