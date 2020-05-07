@@ -131,6 +131,35 @@ header ul li a:hover {
   color: #002d75;
 }
 
+#product {
+  background-color: #B8DAE4;
+}
+
+#product .container {
+  display: flex;
+  flex-direction: column;
+}
+
+#product .container h1 {
+  text-align: center;
+  color: #002d75;
+}
+
+#product .container .box-img {
+  display: flex;
+  justify-content: center;
+}
+
+#product .container .box-img img {
+  width: 80%;
+}
+
+#product .container p {
+  padding: 20px;
+  margin: 10px;
+  color: #002d75;
+}
+
 /* Footer */
 
 footer {
