@@ -57,11 +57,13 @@
 }
 
 #product {
+    margin-top: 7px;
     background-color: $bg-color-product;
     .container {
         display: flex;
         flex-direction: column;
         h1 {
+            padding: 20px;
             text-align: center;
             color: $font_secondary_color;
         }
@@ -69,13 +71,28 @@
             display: flex;
             justify-content: center;
             img {
-                width: 80%;
+                width: 75%;
+            }
+        }
+        .controller {
+            display: flex;
+            justify-content: space-between;
+            margin: 15px;
+            .fa-arrow-circle-left::before,
+            .fa-arrow-circle-right::before,{
+                color: $font_secondary_color;
             }
         }
         p {
-            padding: 20px;
+            padding: 20px 60px;
             margin: 10px;
+            font-family: $secondary-font;
             color: $font_secondary_color;
+            font-size: 18px;
         }
     }
+}
+
+#home {
+    margin: 40px;
 }
