@@ -133,6 +133,9 @@ main .container .cards .card .card-link h3 a {
 footer {
   display: flex;
   flex-wrap: wrap;
+  background-image: url(/images/footer-montagne-bottom.jpg?1dcd1a6e532195900c88406fef6f8f12);
+  background-repeat: no-repeat;
+  background-position: bottom;
 }
 
 footer .container {

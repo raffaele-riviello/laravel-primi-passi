@@ -1,6 +1,9 @@
 footer {
     display: flex;
     flex-wrap: wrap;
+    background-image: url('footer-montagne-bottom.jpg');
+    background-repeat: no-repeat;
+    background-position: bottom;
     .container {
         flex-basis: calc(100% / 3 - 100px);
         margin: 50px;
