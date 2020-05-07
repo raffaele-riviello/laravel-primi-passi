@@ -38,7 +38,11 @@ header ul {
 
 header ul li {
   display: inline-block;
-  margin-bottom: 10px;
+}
+
+header ul li.active {
+  background-color: #cde2e7;
+  padding: 10px;
 }
 
 header ul li a {
@@ -49,8 +53,7 @@ header ul li a {
   transition-duration: 0.5s;
 }
 
-header ul li a:hover,
-header ul li a .active {
+header ul li a:hover {
   background-color: #cde2e7;
 }
 
