@@ -1,21 +1,16 @@
+@extends('layouts.layout')
+@section('css')
 
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+@endsection
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>La Molisana | Home Page</title>
-    <link rel="stylesheet" href="{{asset('css/app.css')}}">
+@section('titolo')
+    La Molisana
+@endsection
 
+@section('mainContent')
+    Index
+@endsection
 
-</head>
+@section('scripts')
 
-<body>
-    @include('partials.header')
-    @include('partials.footer')
-
-
-</body>
-
-</html>
+@endsection

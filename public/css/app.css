@@ -49,68 +49,68 @@ header ul li a {
   transition-duration: 0.5s;
 }
 
-header ul li a:hover {
+header ul li a:hover,
+header ul li a .active {
   background-color: #cde2e7;
 }
 
 /* Main */
 
-main {
+#products {
   background-image: url(/images/fondo-pag-speciali.jpg?2f95c43d2f5c6ce37bf1838709b316a3);
 }
 
-main .container {
+#products .container {
   width: 90%;
   margin: 0 auto;
 }
 
-main .container h2 {
+#products .container h2 {
   color: #002d75;
   font-size: 30px;
   padding: 30px 0 0 30px;
 }
 
-main .container .cards {
+#products .container .cards {
   display: flex;
   flex-wrap: wrap;
 }
 
-main .container .cards .card {
+#products .container .cards .card {
   flex-basis: calc(100% / 3 - 40px);
   position: relative;
   margin: 20px;
   overflow: hidden;
-  border-radius: 10px;
   box-shadow: 0px 0px 10px 0px #cde2e7;
 }
 
 @media screen and (max-width: 768px) {
-  main .container .cards .card {
+  #products .container .cards .card {
     flex-basis: calc(100% / 2 - 40px);
   }
 }
 
 @media screen and (max-width: 375px) {
-  main .container .cards .card {
+  #products .container .cards .card {
     flex-basis: 100%;
   }
 }
 
-main .container .cards .card:hover .card-link {
+#products .container .cards .card:hover .card-link {
   opacity: 1;
 }
 
-main .container .cards .card:hover img {
+#products .container .cards .card:hover img {
   transform: scale(1.4);
 }
 
-main .container .cards .card img {
+#products .container .cards .card img {
   display: block;
   width: 100%;
   transition-duration: 3s;
 }
 
-main .container .cards .card .card-link {
+#products .container .cards .card .card-link {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -120,11 +120,11 @@ main .container .cards .card .card-link {
   text-align: center;
 }
 
-main .container .cards .card .card-link h3 {
+#products .container .cards .card .card-link h3 {
   padding-bottom: 10px;
 }
 
-main .container .cards .card .card-link h3 a {
+#products .container .cards .card .card-link h3 a {
   color: #002d75;
 }
 
@@ -141,6 +141,7 @@ footer {
 footer .container {
   flex-basis: calc(100% / 3 - 100px);
   margin: 50px;
+  padding-bottom: 50px;
 }
 
 footer .container h4 {

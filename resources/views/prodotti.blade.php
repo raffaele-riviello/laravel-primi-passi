@@ -16,21 +16,17 @@
     }
 
 @endphp
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+@extends('layouts.layout')
+@section('css')
+    {{-- css prodotti --}}
+@endsection
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>La Molisana | Prodotti</title>
-    <link rel="stylesheet" href="{{asset('css/app.css')}}">
+@section('titolo')
+    Prodotti
+@endsection
 
-
-</head>
-
-<body>
-    @include('partials.header')
-    <main>
+@section('mainContent')
+    <main id="products">
         <div class="container">
             <h2>Le lunghe</h2>
             @if(!empty($lunghe))
@@ -89,9 +85,8 @@
             @endif
         </div>
     </main>
-    @include('partials.footer')
+@endsection
 
-
-</body>
-
-</html>
+@section('scripts')
+{{-- scriptjss --}}
+@endsection
