@@ -39,7 +39,12 @@
             <div class="box-img">
                 <img src="{{$prodotto['src-p']}}" alt="{{$prodotto['titolo']}}">
             </div>
-            <p>{!!$prodotto['descrizione']!!}</p>
+            <div class="descrizione">
+                <p>
+                    {!!$prodotto['descrizione']!!}
+                </p>
+            </div>
+
         </div>
     </main>
 @endsection
