@@ -19,9 +19,12 @@ Route::get('/', function () {
     return view('home');
 })->name('home');
 
-Route::get('/prodotti', function () {
-    return view('prodotti');
-})->name('prodotti');
+// Route::get('/prodotti', function () {
+//     return view('prodotti');
+// })->name('prodotti');
+
+Route::get('/prodotti', 'ProductController@product')->name('prodotti');
+
 
 Route::get('/prodotti/{id}', function ($id) {
     return view('prodotto' , compact("id"));

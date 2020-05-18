@@ -1,4 +1,7 @@
 @php
+    $products = App\Product::all();
+    dd($products);
+
     $cards = config('products');
     $lunghe = [];
     $corte = [];
