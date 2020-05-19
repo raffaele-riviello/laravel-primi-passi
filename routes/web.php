@@ -23,7 +23,8 @@ Route::get('/', function () {
 //     return view('prodotti');
 // })->name('prodotti');
 
-Route::get('/prodotti', 'ProductController@product')->name('prodotti');
+// Route::get('/prodotti', 'ProductController@index')->name('prodotti');
+Route::get('/prodotti', 'ProductController@index')->name('prodotti');
 
 
 Route::get('/prodotti/{id}', function ($id) {
